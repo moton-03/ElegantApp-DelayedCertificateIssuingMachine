@@ -9,46 +9,46 @@
     <Grid x:Name="ContentArea">
         <StackPanel Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
-                <MenuBar>
-                    <MenuBarItem Title="File">
-                        <MenuFlyoutItem x:Name="FileNew" Text="New" Click="FileNew_Click"/>
-                        <MenuFlyoutItem x:Name="FileExport" Text="Export" Click="FileExport_Click"/>
-                        <MenuFlyoutSeparator></MenuFlyoutSeparator>
-                        <MenuFlyoutItem x:Name="FileExit" Text="Exit" Click="FileExit_Click"/>
-                    </MenuBarItem>
-                    <MenuBarItem Title="Help">
-                        <MenuFlyoutItem x:Name="HelpAbout" Text="About" Click="HelpAbout_Click"/>
-                    </MenuBarItem>
-                </MenuBar>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <StackPanel x:Name="SidePanel" Orientation="Vertical">
-                    <Expander Header="Property">
-                        <Expander.Content>
-                            <StackPanel Orientation="Vertical">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="Delay Time: "></TextBlock>
-                                    <TextBox></TextBox>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="Publisher: "></TextBlock>
-                                    <TextBox></TextBox>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="Publication Time: "></TextBlock>
-                                    <TextBox></TextBox>
-                                </StackPanel>
-                            </StackPanel>
-                        </Expander.Content>
-                    </Expander>
-                </StackPanel>
                 <StackPanel x:Name="MainPanel" Orientation="Vertical">
-                    <TextBox AutomationProperties.Name="multi-line TextBox"
+                    <TextBox x:Name="MainTextBox"
+                             AutomationProperties.Name="multi-line TextBox"
                              TextWrapping="Wrap"
                              AcceptsReturn="True"
                              IsSpellCheckEnabled="True"
                              Width="300">
                     </TextBox>
+                </StackPanel>
+                <StackPanel x:Name="SidePanel" Orientation="Vertical">
+                    <Expander Header="Property" >
+                        <Expander.Content>
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Delay Time: "></TextBlock>
+                                    <TextBox x:Name="DelayTime"></TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Publisher: "></TextBlock>
+                                    <TextBox x:Name="Publisher"></TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Publication Time: "></TextBlock>
+                                    <TextBox x:Name="PublicationTime"></TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </Expander.Content>
+                    </Expander>
+                    <Expander Header="File">
+                        <Expander.Content>
+                            <StackPanel Orientation="Vertical">
+                                <Button x:Name="New"
+                                        Content="New"
+                                        Click="New_Click"></Button>
+                                <Button x:Name="Export"
+                                        Content="Export"
+                                        Click="Export_Click"></Button>
+                            </StackPanel>
+                        </Expander.Content>
+                    </Expander>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

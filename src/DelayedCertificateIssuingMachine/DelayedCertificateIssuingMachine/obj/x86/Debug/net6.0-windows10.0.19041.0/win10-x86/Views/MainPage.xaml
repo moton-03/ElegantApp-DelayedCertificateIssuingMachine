@@ -11,27 +11,49 @@
             <StackPanel Orientation="Horizontal">
                 <MenuBar>
                     <MenuBarItem Title="File">
-                        <MenuFlyoutItem x:ConnectionId='6' x:Name="FileNew" Text="New"                      />
-                        <MenuFlyoutItem x:ConnectionId='7' x:Name="FileExport" Text="Export"                         />
+                        <MenuFlyoutItem x:ConnectionId='10' x:Name="FileNew" Text="New"                      />
+                        <MenuFlyoutItem x:ConnectionId='11' x:Name="FileExport" Text="Export"                         />
                         <MenuFlyoutSeparator></MenuFlyoutSeparator>
-                        <MenuFlyoutItem x:ConnectionId='8' x:Name="FileExit" Text="Exit"                       />
+                        <MenuFlyoutItem x:ConnectionId='12' x:Name="FileExit" Text="Exit"                       />
+                    </MenuBarItem>
+                    <MenuBarItem Title="Preview">
+                        
                     </MenuBarItem>
                     <MenuBarItem Title="Help">
-                        <MenuFlyoutItem x:ConnectionId='5' x:Name="HelpAbout" Text="About"                        />
+                        <MenuFlyoutItem x:ConnectionId='9' x:Name="HelpAbout" Text="About"                        />
                     </MenuBarItem>
+                    
                 </MenuBar>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <StackPanel x:ConnectionId='3' x:Name="SidePanel" Orientation="Vertical">
-
-                </StackPanel>
-                <StackPanel x:ConnectionId='4' x:Name="MainPanel" Orientation="Vertical">
-                    <TextBox AutomationProperties.Name="multi-line TextBox"
+                <StackPanel x:ConnectionId='3' x:Name="MainPanel" Orientation="Vertical">
+                    <TextBox x:ConnectionId='8' x:Name="MainTextBox"
+                             AutomationProperties.Name="multi-line TextBox"
                              TextWrapping="Wrap"
                              AcceptsReturn="True"
                              IsSpellCheckEnabled="True"
-                             MinWidth="400" >
+                             Width="300">
                     </TextBox>
+                </StackPanel>
+                <StackPanel x:ConnectionId='4' x:Name="SidePanel" Orientation="Vertical">
+                    <Expander Header="Property" >
+                        <Expander.Content>
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Delay Time: "></TextBlock>
+                                    <TextBox x:ConnectionId='7' x:Name="DelayTime"></TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Publisher: "></TextBlock>
+                                    <TextBox x:ConnectionId='6' x:Name="Publisher"></TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Publication Time: "></TextBlock>
+                                    <TextBox x:ConnectionId='5' x:Name="PublicationTime"></TextBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </Expander.Content>
+                    </Expander>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

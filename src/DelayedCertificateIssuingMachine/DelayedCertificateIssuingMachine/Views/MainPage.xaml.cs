@@ -15,24 +15,24 @@ public sealed partial class MainPage : Page
     {
         ViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
+
     }
 
-    private void FileNew_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    void Ini()
     {
+        MainTextBox.Text = "Enter the properties and export.";
 
+        DelayTime.Text = "";
+        Publisher.Text = "";
+        PublicationTime.Text = "";
     }
 
-    private void FileExport_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    private void New_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-
+        Ini();
     }
 
-    private void FileExit_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
-    {
-
-    }
-
-    private void HelpAbout_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    private void Export_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
 
     }

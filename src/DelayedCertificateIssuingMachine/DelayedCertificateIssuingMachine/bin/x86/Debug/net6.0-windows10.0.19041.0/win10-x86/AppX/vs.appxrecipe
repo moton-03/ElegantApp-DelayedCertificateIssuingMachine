@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\GitHub\ElegantApp-DelayedCertificateIssuingMachine\src\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-24T08:01:19.553</Modified>
+      <Modified>2022-12-24T11:28:36.274</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\GitHub\ElegantApp-DelayedCertificateIssuingMachine\src\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-12-24T08:01:19.161</Modified>
+      <Modified>2022-12-24T11:28:35.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\ElegantApp-DelayedCertificateIssuingMachine\src\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\DelayedCertificateIssuingMachine.runtimeconfig.json">
       <PackagePath>DelayedCertificateIssuingMachine.runtimeconfig.json</PackagePath>
@@ -43,7 +43,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\ElegantApp-DelayedCertificateIssuingMachine\src\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\DelayedCertificateIssuingMachine.dll">
       <PackagePath>DelayedCertificateIssuingMachine.dll</PackagePath>
-      <Modified>2022-12-24T08:01:18.661</Modified>
+      <Modified>2022-12-24T11:28:35.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\ElegantApp-DelayedCertificateIssuingMachine\src\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine\appsettings.json">
       <PackagePath>appsettings.json</PackagePath>
@@ -51,7 +51,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\ElegantApp-DelayedCertificateIssuingMachine\src\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\apphost.exe">
       <PackagePath>DelayedCertificateIssuingMachine.exe</PackagePath>
-      <Modified>2022-12-24T08:01:18.693</Modified>
+      <Modified>2022-12-24T11:28:35.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\GitHub\ElegantApp-DelayedCertificateIssuingMachine\src\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\DelayedCertificateIssuingMachine.deps.json">
       <PackagePath>DelayedCertificateIssuingMachine.deps.json</PackagePath>
