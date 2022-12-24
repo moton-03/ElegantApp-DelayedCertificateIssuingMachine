@@ -1,0 +1,1 @@
+C:\GitHub\ElegantApp-DelayedCertificateIssuingMachine\src\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine\DelayedCertificateIssuingMachine.csproj;x86

@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "DelayedCertificateIssuingMachine (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "DelayedCertificateIssuingMachine (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
