@@ -9,47 +9,57 @@
     <Grid x:ConnectionId='2' x:Name="ContentArea">
         <StackPanel Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
-                <MenuBar>
-                    <MenuBarItem Title="File">
-                        <MenuFlyoutItem x:ConnectionId='10' x:Name="FileNew" Text="New"                      />
-                        <MenuFlyoutItem x:ConnectionId='11' x:Name="FileExport" Text="Export"                         />
-                        <MenuFlyoutSeparator></MenuFlyoutSeparator>
-                        <MenuFlyoutItem x:ConnectionId='12' x:Name="FileExit" Text="Exit"                       />
-                    </MenuBarItem>
-                    <MenuBarItem Title="Preview">
-                        
-                    </MenuBarItem>
-                    <MenuBarItem Title="Help">
-                        <MenuFlyoutItem x:ConnectionId='9' x:Name="HelpAbout" Text="About"                        />
-                    </MenuBarItem>
-                    
-                </MenuBar>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <StackPanel x:ConnectionId='3' x:Name="MainPanel" Orientation="Vertical">
-                    <TextBox x:ConnectionId='8' x:Name="MainTextBox"
+                <StackPanel x:ConnectionId='3' x:Name="LeftPanel" Orientation="Vertical">
+                    <Expander x:Uid="FileText" IsExpanded="True">
+                        <Expander.Content>
+                            <StackPanel Orientation="Vertical">
+                                <Button x:ConnectionId='12' x:Name="New"
+                                        Content="New"
+                                                         ></Button>
+                                <Button x:ConnectionId='13' x:Name="Export"
+                                        Content="Export"
+                                                            ></Button>
+                            </StackPanel>
+                        </Expander.Content>
+                    </Expander>
+                    <Expander x:Uid="DownloadText" IsExpanded="True">
+                        <Expander.Content>
+                            <StackPanel Orientation="Vertical">
+                                <Button x:ConnectionId='10' x:Name="Download"
+                                        Content="Download"
+                                                              ></Button>
+                                <Button x:ConnectionId='11' x:Name="Print"
+                                        Content="Print"
+                                                           ></Button>
+                            </StackPanel>
+                        </Expander.Content>
+                    </Expander>
+                </StackPanel>
+                <StackPanel x:ConnectionId='4' x:Name="MainPanel" Orientation="Vertical">
+                    <TextBox x:ConnectionId='9' x:Name="MainTextBox"
                              AutomationProperties.Name="multi-line TextBox"
                              TextWrapping="Wrap"
                              AcceptsReturn="True"
                              IsSpellCheckEnabled="True"
-                             Width="300">
+                             Width="300"
+                             IsReadOnly="True">
                     </TextBox>
                 </StackPanel>
-                <StackPanel x:ConnectionId='4' x:Name="SidePanel" Orientation="Vertical">
-                    <Expander Header="Property" >
+                <StackPanel x:ConnectionId='5' x:Name="RightPanel" Orientation="Vertical">
+                    <Expander x:Uid="PropertyText" IsExpanded="True">
                         <Expander.Content>
                             <StackPanel Orientation="Vertical">
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Delay Time: "></TextBlock>
-                                    <TextBox x:ConnectionId='7' x:Name="DelayTime"></TextBox>
+                                    <TextBox x:ConnectionId='8' x:Name="DelayTime"></TextBox>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Publisher: "></TextBlock>
-                                    <TextBox x:ConnectionId='6' x:Name="Publisher"></TextBox>
+                                    <TextBox x:ConnectionId='7' x:Name="Publisher"></TextBox>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="Publication Time: "></TextBlock>
-                                    <TextBox x:ConnectionId='5' x:Name="PublicationTime"></TextBox>
+                                    <TextBox x:ConnectionId='6' x:Name="PublicationTime"></TextBox>
                                 </StackPanel>
                             </StackPanel>
                         </Expander.Content>
