@@ -25,12 +25,23 @@
                     <Expander x:Uid="DownloadText" IsExpanded="True">
                         <Expander.Content>
                             <StackPanel Orientation="Vertical">
-                                <Button x:Name="Download"
-                                        Content="Download"
-                                        Click="Download_Click"></Button>
-                                <Button x:Name="Print"
-                                        Content="Print"
-                                        Click="Print_Click"></Button>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Download">
+                                        <Button.Flyout>
+                                            <Flyout x:Name="DownloadFlyout">
+                                                <StackPanel Orientation="Vertical">
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBox x:Name="DownloadFilePath"></TextBox>
+                                                        <TextBlock Text=".txt"></TextBlock>
+                                                    </StackPanel>
+                                                    <Button x:Name="Download"
+                                                        Content="Download"
+                                                        Click="Download_Click"></Button>
+                                                </StackPanel>
+                                            </Flyout>
+                                        </Button.Flyout>
+                                    </Button>
+                                </StackPanel>
                             </StackPanel>
                         </Expander.Content>
                     </Expander>

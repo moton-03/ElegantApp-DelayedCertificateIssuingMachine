@@ -52,11 +52,11 @@ This certificate proves that something was delayed by {DelayTime.Text}.
 
     private void Download_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
+        DownloadFlyout.Hide();
 
+        var sw = new StreamWriter($@"C:\Delayed Certificate\{DownloadFilePath.Text}.txt");
+        sw.Write(MainTextBox.Text);
+        sw.Close();
     }
 
-    private void Print_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
-    {
-
-    }
 }
